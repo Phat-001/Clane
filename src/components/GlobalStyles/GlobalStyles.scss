@@ -1,0 +1,21 @@
+:root{
+     --black: #161616;
+     --brown: #915005;
+}
+
+@font-face {
+     font-family: 'SofiaPro';
+     src: url('../../assets/fonts/Fonts/sofiapro-light.otf');
+}
+
+*{
+     list-style-type: none;
+     text-decoration: none;
+}
+.d-flex{
+     display: flex;;
+}
+
+.slick-list {
+     overflow-x: hidden !important;
+}

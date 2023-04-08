@@ -1,0 +1,72 @@
+.introduce {
+     margin-top: 1rem;
+	display: flex;
+	& > div {
+		width: 50%;
+		display: flex;
+		align-items: center;
+	}
+	.content {
+		width: 75%;
+		margin: 0 auto;
+          h1{
+               color: #111111;
+               font-size: 50px;
+               font-family: 'SofiaPro', sans-serif;
+               font-weight: bold;
+               margin-bottom: 0;
+          }
+          p{
+               padding-top: 1.5rem;
+               color: #111111;
+               font-size: 1rem;
+               font-family: 'SofiaPro', sans-serif;
+               font-weight: 700;
+          }
+		
+	}
+     img {
+          width: 100%;
+     }
+     .readbtn{
+          padding-top: 1.5rem;
+     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+     .content {
+          h1{
+               height: 100px;
+          }
+     }
+}
+@media screen and (min-width: 468px) and (max-width: 768px) {
+     .introduce {
+          flex-direction: column;
+          gap :2rem;
+          &>div{
+               width: 100%;
+          }
+     }
+     .content {
+          h1{
+               height: 80px;
+               font-size: 40px !important;
+          }
+     }
+}
+@media screen and (max-width: 468px) {
+     .introduce {
+          flex-direction: column;
+          gap :2rem;
+          &>div{
+               width: 100%;
+          }
+     }
+     .content {
+          h1{
+               height: 80px;
+               font-size: 30px !important;
+          }
+     }
+}

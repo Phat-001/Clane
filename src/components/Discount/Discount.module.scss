@@ -1,0 +1,57 @@
+.discount{
+     background: url(../../assets/images/img_discount.png);
+     background-size: cover;
+     padding: 100px 0;
+     background-position: center center;
+     margin: 2rem 0;
+     h2{
+          color: #fff;
+          font-size: 35px;
+          position: relative;
+          display: inline-block;
+          
+          &::after{
+               content: '';
+               position: absolute;
+               height: 2px;
+               background-color: var(--brown);
+               width: 55%;
+               bottom: -5px;
+               left: 50%;
+               transform: translateX(-50%);
+          }
+     }
+     p{
+          color: #fff;
+          font-size: 16px;
+          margin-top: 10px;
+     }
+     .input__wrapper{
+          display: flex;
+          width: 70%;
+          button{
+               color: #fff;
+               background-color: var(--brown);
+               border: 2px solid #fff;
+               font-size: 20px;
+               box-sizing: border-box;
+               padding: 0px 10px;
+               &:hover{
+                    color: var(--brown);
+                    border: var(--brown);
+               background-color: #fff;
+               border: 1px solid var(--brown);
+               
+               }
+          }
+          input[type="email"]{
+               padding: 10px 20px;
+               font-weight: bold;
+               font-family: 'SofiaPro', sans-serif;
+               border: none;
+               &:focus{
+                    outline: none;
+               }
+          }
+     }
+}

@@ -1,0 +1,13 @@
+export { default as Footer } from './Footer';
+export { default as Header } from './Header';
+export { default as GlobalStyles } from './GlobalStyles';
+export { default as Button } from './Button';
+export { default as Policy } from './Policy';
+export { default as Banner } from './Banner';
+export { default as Introduce } from './Introduce';
+export { default as Discount } from './Discount';
+export { default as Product } from './Product';
+export { default as Arrivals } from './Arrivals';
+export { default as BlogsSlider } from './BlogsSlider';
+export { default as BlogItem } from './BlogItem';
+export { default as Just4U } from './Just4U';

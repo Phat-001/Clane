@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.test{
+  color: black !important;
+}
+
+/* custom css slider arrivals */
+.custom__slider_blogs .slick-slide,
+.custom__slider_arrivals .slick-slide {
+  margin: 0 10px !important; /* thêm khoảng cách 10px giữa mỗi slide */
+}
+
+.custom__slider_blogs .slick-list,
+.custom__slider_arrivals .slick-list {
+  margin: 0 -10px !important; /* bù trừ khoảng cách ở hai bên của slider */
+}
+
+.custom__slider_blogs .slick-track,
+.custom__slider_arrivals .slick-track {
+  display: flex !important; /* dùng flexbox để căn giữa các slide */
+}
+
+.custom__slider_blogs .slick-dots li button:before,
+.custom__slider_arrivals .slick-dots li button:before {
+  color: var(--brown);
+  font-size: 13px;
+}
+
+.slick-active li button:before {
+  color: var(--brown);
+}
