@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ConfigProvider } from 'antd';
+import viVN from 'antd/lib/locale/vi_VN';
 
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,9 +20,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <GlobalStyles>
-        <App />
-      </GlobalStyles>
+      <ConfigProvider>
+        <GlobalStyles>
+          <App />
+        </GlobalStyles>
+      </ConfigProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -3,6 +3,7 @@ import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/logo.png";
+import { Tooltip } from 'antd';
 
 //react icon
 import { CgSearch } from "react-icons/cg";
@@ -194,9 +195,12 @@ function Header() {
 											</Link>
 										</li>
 										<li>
-											<Link to="/">
+                    <Tooltip title="prompt text">
+                      <Link to="/">
 												<FaRegUser />
 											</Link>
+                    </Tooltip>
+											
 										</li>
 										<li>
 											<Link to="/">

@@ -1,21 +1,37 @@
-:root{
-     --black: #161616;
-     --brown: #915005;
+:root {
+	--black: #161616;
+	--brown: #915005;
 }
 
 @font-face {
-     font-family: 'SofiaPro';
-     src: url('../../assets/fonts/Fonts/sofiapro-light.otf');
+	font-family: 'SofiaPro';
+	src: url('../../assets/fonts/Fonts/sofiapro-light.otf');
 }
 
-*{
-     list-style-type: none;
-     text-decoration: none;
+* {
+	list-style-type: none;
+	text-decoration: none;
 }
-.d-flex{
-     display: flex;;
+.d-flex {
+	display: flex;
 }
 
 .slick-list {
-     overflow-x: hidden !important;
+	overflow-x: hidden !important;
+}
+
+body {
+	scrollbar-color: var(--brown) rgb(201, 201, 201);
+	scrollbar-width: 5px;
+}
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--brown);
+}
+
+body::-webkit-scrollbar-track {
+	background-color: rgb(201, 201, 201);
 }
